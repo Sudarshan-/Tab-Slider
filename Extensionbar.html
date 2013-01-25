@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#counter {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 200px;
+    height:10px;
+    border-radius:50px;
+  border-color:rgb(240, 61, 37);
+}
+
+#counter::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    width:15px;
+	height:15px;
+	border-radius:50px;
+	content:"1";
+	background:rgb(240, 61, 37);
+	opacity:0.95;
+}
+#counter::-webkit-slider-thumb:hover{
+	opacity:1;
+	box-shadow:1px 1px 2px red;
+	/*-webkit-transform: scale(1.2,1.2);*/
+}
+#output {
+	margin-left:4px;
+-webkit-box-shadow: rgba(0, 39, 121, 0.772549) 0px 1px 0px 0px;
+background-color: rgb(240, 61, 37);
+border-bottom-color: rgb(192, 49, 30);
+border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-left-color: rgb(216, 55, 34);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(216, 55, 34);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(226, 57, 35);
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+border-top-style: solid;
+border-top-width: 1px;
+color: white;
+direction: ltr;
+font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+font-size: 9px;
+font-weight: bold;
+height: 15px;
+line-height: 11px;
+padding-left: 1px;
+padding-right: 1px;
+width: 14px;
+}
+</style>
+<script src="bar.js"></script>
+</head>
+<body>
+<input id="counter" type="range" min="0"  ></input><span id="output">1</span>
+</body>
+</html>
